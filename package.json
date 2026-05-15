@@ -1,17 +1,26 @@
 {
-  "name": "projet_js",
+  "name": "markov-text-predictor",
   "version": "1.0.0",
-  "private": true,
-  "description": "Base JS avec Biome, Docker et config éditeur.",
+  "description": "Modèle de Markov appliqué aux textes pour la prédiction de saisie au clavier",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
-    "setup": "npm install",
-    "lint": "biome check .",
-    "format": "biome format --write ."
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src",
+    "check": "biome check --write ./src",
+    "demo": "node src/demo.js"
+  },
+  "keywords": ["markov", "nlp", "text-prediction", "ramda", "keyboard"],
+  "author": "Mrknaipe",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.30.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
