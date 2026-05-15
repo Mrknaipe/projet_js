@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      target: deps  # stop before runner stage to keep devDependencies
+    command: npm run dev
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules

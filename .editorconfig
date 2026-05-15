@@ -1,5 +1,6 @@
 root = true
 
+# ── Defaults (tous les fichiers) ────────────────────────────────────────────
 [*]
 indent_style = space
 indent_size = 2
@@ -8,8 +9,14 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# ── Markdown : conserver les espaces de fin (line-breaks intentionnels) ────
 [*.md]
 trim_trailing_whitespace = false
 
-[*.json]
+# ── JSON / YAML ────────────────────────────────────────────────────────────
+[*.{json,yml,yaml}]
 indent_size = 2
+
+# ── Makefiles : tabs obligatoires ──────────────────────────────────────────
+[Makefile]
+indent_style = tab

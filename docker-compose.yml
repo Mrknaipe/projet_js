@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: markov-text-predictor
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    volumes:
+      # Mount src for live reload in dev (override below)
+      - ./src:/app/src:ro
+
+  # Override for local development: mount code + install devDeps
+  # Run with: docker compose -f docker-compose.yml -f docker-compose.dev.yml up
