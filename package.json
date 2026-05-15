@@ -2,6 +2,7 @@
   "name": "projet_js",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Base JS avec Biome, Docker et config éditeur.",
   "main": "src/index.js",
   "scripts": {
