@@ -83,15 +83,3 @@ const top3 = topPredictions(model, 3, "le chat");
 
 ---
 
-## Qualité
-
-- **[Biome](https://biomejs.dev/)** — lint et formatage
-- **[EditorConfig](https://editorconfig.org/)** — cohérence des fichiers
-- **ESModules** — `"type": "module"` dans `package.json`
-- Node.js ≥ 18
-
----
-
-## Licence
-
-MIT

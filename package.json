@@ -13,8 +13,8 @@
     "check": "biome check --write ./src",
     "ci": "biome ci ./src"
   },
-  "keywords": ["markov", "nlp", "text-prediction", "ramda", "keyboard"],
-  "author": "Mrknaipe",
+  "keywords": ["markov", "nlp", "text-prediction", "ramda", "keyboard","JavaScript"],
+  "author": "Mrknaipe", 
   "license": "MIT",
   "dependencies": {
     "ramda": "^0.30.1"
